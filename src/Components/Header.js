@@ -13,17 +13,17 @@ export default function Header() {
       <Container>
         <Row className="align-items-center">
           <Col lg={6}>
-            <h1 className="header-title mb-4">
+            <h1 className="header-title mb-4 text-center text-lg-start">
               Kirim berbagai jenis
               <br />
               ikan dengan mudah
             </h1>
-            <p className="header-desc">
+            <p className="header-desc text-center text-lg-start">
               A Lorem Ipsum is simply dummy text of the printing and <br />{" "}
               typesetting industry. Lorem Ipsum has been the industry's
             </p>
-            <div className="d-flex my-5">
-              <Button className="header-button d-flex me-4">
+            <div className="d-flex my-5 justify-content-center justify-content-lg-start flex-column flex-sm-row align-items-center">
+              <Button className="header-button d-flex me-sm-4 mb-4 mb-sm-0">
                 <img src={GooglePlayLogo} alt="google-play-logo.svg" />
                 <img src={GooglePlayLabel} alt="google-play-label.svg" />
               </Button>
@@ -32,7 +32,7 @@ export default function Header() {
                 <img src={AppStoreLabel} alt="app-store-label.svg" />
               </Button>
             </div>
-            <div className="d-flex">
+            <div className="d-flex justify-content-center justify-content-lg-start">
               <div className="me-5">
                 <h2 className="header-count">1.9k+</h2>
                 <p className="header-count-label">Active Users</p>
@@ -44,12 +44,16 @@ export default function Header() {
             </div>
           </Col>
           <Col lg={6}>
-            <div className="header-img">
-              <img src={AppsImage} alt="header-img-apps.png" />
+            <div className="header-img d-flex align-items-center">
               <img
                 src={FishesImage}
                 alt="header-img-fishes.png"
                 className="fishes-img"
+              />
+              <img
+                src={AppsImage}
+                alt="header-img-apps.png"
+                className="apps-img"
               />
             </div>
           </Col>

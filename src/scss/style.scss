@@ -63,6 +63,14 @@ $font-poppins: "Poppins", sans-serif;
     font-size: 54px;
     line-height: 70px;
     color: $primary-black;
+    @media screen and (max-width: 1400px) {
+      font-size: 40px;
+      line-height: 58px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   & &-desc {
     font-family: $font-poppins;
@@ -71,6 +79,13 @@ $font-poppins: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 27px;
     color: $primary-grey;
+    @media screen and (max-width: 1400px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
   & &-count {
     font-family: $font-poppins;
@@ -79,6 +94,10 @@ $font-poppins: "Poppins", sans-serif;
     font-size: 40px;
     line-height: 60px;
     color: $primary-red;
+    @media screen and (max-width: 576px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   & &-count-label {
     font-family: $font-poppins;
@@ -87,18 +106,49 @@ $font-poppins: "Poppins", sans-serif;
     font-size: 18px;
     line-height: 32px;
     color: $primary-grey;
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
   & &-button {
     background-color: $primary-black;
     padding: 12px 28px;
+    width: fit-content;
   }
   & &-img {
     position: relative;
+    height: 700px;
     .fishes-img {
+      width: 100%;
+      max-width: 300px;
+      @media screen and (max-width: 1200px) {
+        width: 250px;
+      }
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+    .apps-img {
       position: absolute;
       top: 50%;
-      left: 0;
+      right: 0;
       transform: translateY(-50%);
+      width: 100%;
+      max-width: 300px;
+      @media screen and (max-width: 1200px) {
+        width: 250px;
+      }
+      @media screen and (max-width: 576px) {
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
+    }
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      margin: auto;
+      max-width: 500px;
+      height: 550px;
     }
   }
   & &-bg {
@@ -112,5 +162,16 @@ $font-poppins: "Poppins", sans-serif;
     transform: translateY(-50%);
     z-index: -1;
     border-radius: 50px 0px 0px 50px;
+    @media screen and (max-width: 1400px) {
+      width: 600px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 500px;
+    }
+    @media screen and (max-width: 992px) {
+      bottom: 0;
+      top: unset;
+      transform: unset;
+    }
   }
 }
