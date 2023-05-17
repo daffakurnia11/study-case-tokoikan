@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$primary-orange: #f2572e;
+$secondary-orange: #f05830;
+
+$primary-red: #dc1e23;
+$secondary-red: #bb191e;
+
+$primary-white: #ffffff;
+
+$primary-black: #0d0d0d;
+
+$font-inter: "Inter", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+.navigation {
+  & &-brand {
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    color: $primary-orange;
+  }
+  & &-link {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 16px;
+    color: $primary-black;
+    &:hover {
+      color: $primary-orange;
+    }
+    &.active {
+      color: $secondary-orange;
+    }
+  }
+  & &-button {
+    font-family: $font-poppins;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 16px 28px;
+    color: $primary-white;
+    background-color: $primary-red;
+    border-color: $primary-red;
+    &:hover {
+      background-color: $secondary-red;
+    }
+  }
+}
