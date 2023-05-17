@@ -2,6 +2,7 @@
   "conventionalCommits.scopes": [
     "navbar",
     "header",
-    "tracking"
+    "tracking",
+    "privilege"
   ]
 }
