@@ -25,7 +25,7 @@ export default function Features() {
               </p>
             </Col>
             <Col lg={6}>
-              <div className="features-img d-flex align-items-center">
+              <div className="features-img">
                 <img
                   src={FirstFish}
                   alt="features-img-fishes.png"
@@ -57,7 +57,7 @@ export default function Features() {
               </p>
             </Col>
             <Col lg={6} className="order-lg-1 order-2">
-              <div className="features-img d-flex align-items-center">
+              <div className="features-img">
                 <img
                   src={SecondFish}
                   alt="features-img-fishes.png"
@@ -89,7 +89,7 @@ export default function Features() {
               </p>
             </Col>
             <Col lg={6}>
-              <div className="features-img d-flex align-items-center">
+              <div className="features-img">
                 <img
                   src={ThirdFish}
                   alt="features-img-fishes.png"

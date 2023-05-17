@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#root {
+  overflow-x: hidden;
+}
+
 .navigation .navigation-brand {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -435,6 +439,12 @@
 
 .features {
   position: relative;
+  margin: -100px 0;
+}
+@media screen and (max-width: 992px) {
+  .features {
+    margin: 0;
+  }
 }
 .features .features-title {
   font-family: "Poppins", sans-serif;
@@ -477,47 +487,52 @@
 }
 .features.odd .features-img {
   position: relative;
-  height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .features.odd .features-img {
+    margin: auto;
+    height: 550px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.features.odd .features-img .apps-img {
+  position: relative;
+  z-index: 1;
+  margin-left: 75px;
+}
+@media screen and (max-width: 1400px) {
+  .features.odd .features-img .apps-img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .features.odd .features-img .apps-img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .features.odd .features-img .apps-img {
+    margin-right: 65px;
+  }
 }
 .features.odd .features-img .fishes-img {
-  width: 100%;
-  max-width: 300px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 1200px) {
   .features.odd .features-img .fishes-img {
-    width: 250px;
+    width: 300px;
   }
 }
 @media screen and (max-width: 576px) {
   .features.odd .features-img .fishes-img {
     display: none;
-  }
-}
-.features.odd .features-img .apps-img {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  max-width: 300px;
-}
-@media screen and (max-width: 1200px) {
-  .features.odd .features-img .apps-img {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .features.odd .features-img .apps-img {
-    right: 50%;
-    transform: translate(50%, -50%);
-  }
-}
-@media screen and (max-width: 992px) {
-  .features.odd .features-img {
-    width: 100%;
-    margin: auto;
-    max-width: 500px;
-    height: 550px;
   }
 }
 .features.odd .features-bg {
@@ -544,56 +559,61 @@
 }
 @media screen and (max-width: 992px) {
   .features.odd .features-bg {
-    bottom: 0;
+    bottom: 70px;
+    width: 100%;
+    border-radius: unset;
     top: unset;
     transform: unset;
   }
 }
 .features.even .features-img {
   position: relative;
-  height: 700px;
-  display: block;
-  margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 992px) {
+  .features.even .features-img {
+    margin: auto;
+    height: 550px;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.features.even .features-img .apps-img {
+  position: relative;
+  z-index: 1;
+  margin-right: 75px;
+}
+@media screen and (max-width: 1400px) {
+  .features.even .features-img .apps-img {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .features.even .features-img .apps-img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .features.even .features-img .apps-img {
+    margin-left: 65px;
+  }
 }
 .features.even .features-img .fishes-img {
-  width: 100%;
-  max-width: 300px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 1200px) {
   .features.even .features-img .fishes-img {
-    width: 250px;
+    width: 300px;
   }
 }
 @media screen and (max-width: 576px) {
   .features.even .features-img .fishes-img {
     display: none;
-  }
-}
-.features.even .features-img .apps-img {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  max-width: 300px;
-}
-@media screen and (max-width: 1200px) {
-  .features.even .features-img .apps-img {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .features.even .features-img .apps-img {
-    left: 50%;
-    transform: translate(50%, -50%);
-  }
-}
-@media screen and (max-width: 992px) {
-  .features.even .features-img {
-    width: 100%;
-    margin: auto;
-    max-width: 500px;
-    height: 550px;
   }
 }
 .features.even .features-bg {
@@ -620,7 +640,9 @@
 }
 @media screen and (max-width: 992px) {
   .features.even .features-bg {
-    bottom: 0;
+    bottom: 70px;
+    width: 100%;
+    border-radius: unset;
     top: unset;
     transform: unset;
   }
