@@ -34,4 +34,41 @@
 }
 .navigation .navigation-button:hover {
   background-color: #bb191e;
+}
+
+.header .header-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 70px;
+  color: #0d0d0d;
+}
+.header .header-desc {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #807d7d;
+}
+.header .header-count {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #dc1e23;
+}
+.header .header-count-label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #807d7d;
+}
+.header .header-button {
+  background-color: #0d0d0d;
+  padding: 12px 28px;
 }/*# sourceMappingURL=style.css.map */

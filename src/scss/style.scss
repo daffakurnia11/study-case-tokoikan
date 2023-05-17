@@ -11,6 +11,8 @@ $primary-white: #ffffff;
 
 $primary-black: #0d0d0d;
 
+$primary-grey: #807d7d;
+
 $font-inter: "Inter", sans-serif;
 $font-poppins: "Poppins", sans-serif;
 
@@ -49,5 +51,44 @@ $font-poppins: "Poppins", sans-serif;
     &:hover {
       background-color: $secondary-red;
     }
+  }
+}
+
+.header {
+  & &-title {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 70px;
+    color: $primary-black;
+  }
+  & &-desc {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $primary-grey;
+  }
+  & &-count {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $primary-red;
+  }
+  & &-count-label {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: $primary-grey;
+  }
+  & &-button {
+    background-color: $primary-black;
+    padding: 12px 28px;
   }
 }
