@@ -362,3 +362,44 @@ $font-poppins: "Poppins", sans-serif;
     }
   }
 }
+
+.contact {
+  & &-desc {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary-grey;
+    width: 100%;
+    max-width: 500px;
+  }
+  & &-copyright {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary-grey;
+  }
+  & &-title {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $primary-black;
+  }
+  & &-list {
+    list-style-type: none;
+    padding: 0;
+    .list-item {
+      font-family: $font-poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      margin: 20px 0;
+      color: $primary-grey;
+    }
+  }
+}
