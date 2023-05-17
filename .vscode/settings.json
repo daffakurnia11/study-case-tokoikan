@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "navbar",
-    "header"
+    "header",
+    "tracking"
   ]
 }

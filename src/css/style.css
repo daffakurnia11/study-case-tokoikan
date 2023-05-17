@@ -184,4 +184,68 @@
     top: unset;
     transform: unset;
   }
+}
+
+.tracking {
+  background-color: #dc1e23;
+  padding: 50px 0;
+  position: relative;
+}
+.tracking .tracking-divider {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .tracking .tracking-divider {
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+}
+.tracking .tracking-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 52px;
+  color: #ffffff;
+}
+@media screen and (max-width: 576px) {
+  .tracking .tracking-title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.tracking .tracking-desc {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .tracking .tracking-desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.tracking .tracking-button {
+  background-color: #f2572e;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
