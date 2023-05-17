@@ -55,6 +55,7 @@ $font-poppins: "Poppins", sans-serif;
 }
 
 .header {
+  position: relative;
   & &-title {
     font-family: $font-poppins;
     font-style: normal;
@@ -90,5 +91,26 @@ $font-poppins: "Poppins", sans-serif;
   & &-button {
     background-color: $primary-black;
     padding: 12px 28px;
+  }
+  & &-img {
+    position: relative;
+    .fishes-img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+  & &-bg {
+    position: absolute;
+    content: "";
+    width: 750px;
+    height: 400px;
+    background-color: $primary-red;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    border-radius: 50px 0px 0px 50px;
   }
 }

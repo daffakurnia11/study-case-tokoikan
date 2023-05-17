@@ -4,12 +4,14 @@ import GooglePlayLogo from "../img/google-play-logo.svg";
 import GooglePlayLabel from "../img/google-play-label.svg";
 import AppStoreLogo from "../img/app-store-logo.svg";
 import AppStoreLabel from "../img/app-store-label.svg";
+import AppsImage from "../img/header-img-apps.png";
+import FishesImage from "../img/header-img-fishes.png";
 
 export default function Header() {
   return (
     <section className="header">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col lg={6}>
             <h1 className="header-title mb-4">
               Kirim berbagai jenis
@@ -41,8 +43,19 @@ export default function Header() {
               </div>
             </div>
           </Col>
+          <Col lg={6}>
+            <div className="header-img">
+              <img src={AppsImage} alt="header-img-apps.png" />
+              <img
+                src={FishesImage}
+                alt="header-img-fishes.png"
+                className="fishes-img"
+              />
+            </div>
+          </Col>
         </Row>
       </Container>
+      <div className="header-bg"></div>
     </section>
   );
 }
