@@ -118,6 +118,7 @@ $font-poppins: "Poppins", sans-serif;
     background-color: $primary-black;
     padding: 12px 28px;
     width: fit-content;
+    border-color: transparent;
   }
   & &-img {
     position: relative;
@@ -303,6 +304,61 @@ $font-poppins: "Poppins", sans-serif;
     color: $primary-grey;
     @media screen and (max-width: 576px) {
       font-size: 14px;
+    }
+  }
+}
+
+.footer {
+  background-color: $primary-red;
+  margin-top: 50px;
+  & &-title {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: $primary-white;
+    @media screen and (max-width: 1200px) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  & &-desc {
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: $primary-white;
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  & &-button {
+    background-color: $primary-black;
+    padding: 12px 28px;
+    width: fit-content;
+    border-color: transparent;
+  }
+  & &-img {
+    position: relative;
+    height: 100%;
+    .courier-img {
+      width: 100%;
+      max-width: 550px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @media screen and (max-width: 992px) {
+        position: relative;
+        margin-top: -100px;
+      }
     }
   }
 }
