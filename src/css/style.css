@@ -681,4 +681,47 @@
     font-size: 14px;
     line-height: 24px;
   }
+}
+.testimoni .swiper {
+  width: 100%;
+  height: 100%;
+}
+.testimoni .swiper-slide {
+  width: fit-content;
+}
+.testimoni .testimoni-card {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  padding: 24px;
+  border-radius: 28px;
+}
+.testimoni .testimoni-avatar {
+  width: 60px;
+}
+.testimoni .testimoni-name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #0d0d0d;
+}
+@media screen and (max-width: 576px) {
+  .testimoni .testimoni-name {
+    font-size: 18px;
+  }
+}
+.testimoni .testimoni-said {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #807d7d;
+}
+@media screen and (max-width: 576px) {
+  .testimoni .testimoni-said {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
